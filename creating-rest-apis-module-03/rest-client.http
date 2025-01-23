@@ -1,0 +1,32 @@
+### Get all songs
+GET http://localhost:3000/songs
+Accept: application/json
+
+### Get a specific song by ID
+GET http://localhost:3000/songs/1
+Accept: application/json
+
+### Create a new song
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+    "title": "New Song",
+    "artist": "Artist Name",
+    "album": "Album Name",
+    "year": 2023
+}
+
+### Update an existing song by ID
+PUT http://localhost:3000/songs/1
+Content-Type: application/json
+
+{
+    "title": "Updated Song Title",
+    "artist": "Updated Artist Name",
+    "album": "Updated Album Name",
+    "year": 2023
+}
+
+### Delete a song by ID
+DELETE http://localhost:3000/songs/1
