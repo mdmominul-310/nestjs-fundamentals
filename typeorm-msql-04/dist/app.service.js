@@ -6,22 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SongsService = void 0;
+exports.AppService = void 0;
 const common_1 = require("@nestjs/common");
-let SongsService = class SongsService {
-    constructor() {
-        this.songs = [];
-    }
-    create(song) {
-        this.songs.push(song);
-        return this.songs;
-    }
-    findAll() {
-        return this.songs;
+let AppService = class AppService {
+    getHello() {
+        return 'Hello World!';
     }
 };
-exports.SongsService = SongsService;
-exports.SongsService = SongsService = __decorate([
+exports.AppService = AppService;
+exports.AppService = AppService = __decorate([
     (0, common_1.Injectable)()
-], SongsService);
-//# sourceMappingURL=songs.service.js.map
+], AppService);
+//# sourceMappingURL=app.service.js.map
